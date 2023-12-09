@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ Page</title>
+  <style>
+    .question {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .answer {
+      display: none;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Frequently Asked Questions</h1>
+
+<div class="faq">
+  <div class="question">Q: ?</div>
+  <div class="answer">A: HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur dan tampilan konten di web.</div>
+
+  <div class="question">Q: Apa perbedaan antara HTML dan CSS?</div>
+  <div class="answer">A: HTML digunakan untuk struktur konten (seperti teks, gambar, link), sementara CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan gaya dari konten HTML.</div>
+
+  <div class="question">Q: Apakah JavaScript?</div>
+  <div class="answer">A: JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website interaktif dan dinamis.</div>
+</div>
+
+<script>
+  // Ambil semua elemen pertanyaan
+  const questions = document.querySelectorAll('.question');
+
+  // Tambahkan event listener untuk setiap pertanyaan
+  questions.forEach(question => {
+    question.addEventListener('click', () => {
+      // Toggle class 'active' pada jawaban untuk menampilkan/menyembunyikan jawaban
+      question.nextElementSibling.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
