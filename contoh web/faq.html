@@ -1,83 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>webku</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <title>FAQ Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-
-    <header>
-        <img src="gambar7.jpeg" alt="header" width="950px" height="120px">
-        <h1 class="judul">Iphone</h1>
-        <p class="deskripsi">Review Iphone </p>
-    </header>
-
-
-    <div class="wrap">
-        <nav class="menu">
-            <ul>
-                <li >
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="product.html">Product</a>     
-                </li>
-                 <li>
-                    <a href="contact-us.html">About Us</a>     
-                </li>
-                <li class="active">
-                    <a href="faq.html">faq</a>     
-                </li>
-            </ul>
-        </nav>
-         <aside class="sidebar">
-        <div class="widget">
-             <div>
-                <img class="widget-pict" src="gambar1.jpeg " alt="pict" widht="100%">
-            </div>
-
-            <h2>Info</h2>
-            <p>6 Desain HP Iphone yang Terbaru</p>
-            <a href="#" class="faq-selengkapnya"> In Full-</a>
-
-        </div>
-          <div class="widget">
-            <div>
-                <img class="widget-pict" src="gambar2.jpeg" alt="pict" width="100%">
-            </div>
-
-            <h2>Info</h2>
-            <p>Model HP Iphone</p>
-            <a href="#" class="faq-selengkapnya">In Full-</a>
-
-        </div>
-        <div class="widget">
-            <h2>Get Catalog</h2>
-            <p>Ipohne </p>
-        </div>
-    
+  <div class="wrap">
+    <nav class="menu">
+        <ul>
+            <li >
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="product.html">Product</a>     
+            </li>
+            <li>
+                <a href="contact-us.html">About Us</a>     
+            </li>
+            <li class="active">
+                <a href="faq.html">faq</a>     
+            </li>
+        </ul>
+    </nav>
+<pre>
 <h1>Frequently Asked Questions</h1>
+</pre>
 
-<div class="blog">
-  <div class="counteuo">Q: ?</div>
-  <div class="answer">A: HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur dan tampilan konten di web.</div>
+<div class="faq">
+  <div class="question">Q: IPHONE ?</div>
+  <div class="answer">A: iPhone adalah merek ponsel cerdas yang dirancang dan dipasarkan oleh Apple Inc. dan menggunakan sistem operasi telepon genggam iOS. iPhone generasi pertama diumumkan oleh CEO Apple Steve Jobs pada tanggal 9 Januari 2007. Sejak saat itu, Apple merilis model iPhone baru dan pembaruan iOS setiap tahun..</div>
 
-  <div class="question">Q: Apa perbedaan antara HTML dan CSS?</div>
-  <div class="answer">A: HTML digunakan untuk struktur konten (seperti teks, gambar, link), sementara CSS (Cascading Style Sheets) digunakan untuk mengatur tampilan dan gaya dari konten HTML.</div>
+  <div class="question">Q: IPHONE Di Kembangkan Oleh? </div>
+  <div class="answer">A: Apple Inc. adalah perusahaan teknologi multinasional yang berpusat di Cupertino, California, yang merancang, mengembangkan, dan menjual barang elektronik konsumen, perangkat lunak komputer, dan layanan daring.</div>
 
-  <div class="question">Q: Apakah JavaScript?</div>
-  <div class="answer">A: JavaScript adalah bahasa pemrograman yang digunakan untuk membuat website interaktif dan dinamis.</div>
+  <div class="question">Q: Kapan IPHONE 15 TERBIT?</div>
+  <div class="answer">A: "Pre-order mulai 20 Oktober 2023, pukul 00.01 WIB. Tersedia mulai 27 Oktober 2023," tulis iBox dalam laman resminya. Ponsel ini dibanderol mulai Rp16,49 juta untuk seri iPhone 15.</div>
+</div>
+<div>
+  
 </div>
 
+
 <script>
-  // Ambil semua elemen pertanyaan
+  
   const questions = document.querySelectorAll('.question');
 
-  // Tambahkan event listener untuk setiap pertanyaan
+  
   questions.forEach(question => {
     question.addEventListener('click', () => {
-      // Toggle class 'active' pada jawaban untuk menampilkan/menyembunyikan jawaban
+      
       question.nextElementSibling.classList.toggle('active');
     });
   });
